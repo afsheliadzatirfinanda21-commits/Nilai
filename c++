@@ -2,18 +2,18 @@
 #include <iostream>
 using namespace std;
 int main() {
-int nilai;
-    cout<<"Masukkan nilai";
+    int nilai;
+    cout<<"Masukkan Nilai ";
     cin>>nilai;
-    if(nilai>95);
+    if(nilai>95)
     {
         cout<<"Nilai kamu A";
     }
-    else if (nilai>85);
+    else if(nilai>85)
     {
         cout<<"Nilai kamu B";
     }
-    else if (nilai>75);
+    else if(nilai>75)
     {
         cout<<"Nilai kamu C";
     }
@@ -21,4 +21,5 @@ int nilai;
     {
         cout<<"Nilai kamu D";
     }
-    return 0;}
+    return 0;
+}
