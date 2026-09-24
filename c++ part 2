@@ -1,0 +1,19 @@
+
+#include <iostream>
+
+int main() {
+    using namespace std;
+    string nama[4]={"Miko","Mila","Niken","Anjar"};
+        int nilai[4]={65,78,90,85};
+    int i;
+    for (i=0;i<4;i++)
+        {
+            cout<<"_______________"<<endl;
+            cout<<"Namamu Adalah"<<endl;
+            cout<<nama[i]<<endl;
+            cout<<"Nilaimu:"<<endl;
+            cout<<nilai[i]<<endl;
+            cout<<"________________"<<endl;
+        }
+    return 0;
+}
