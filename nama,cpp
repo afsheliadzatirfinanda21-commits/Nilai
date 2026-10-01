@@ -1,0 +1,23 @@
+name: Build C++ EXE
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Ambil source code
+        uses: actions/checkout@v4
+
+      - name: Compile C++
+        run: |
+          g++ nama.cpp -o program.exe -static -static-libgcc -static-libstdc++
+
+      - name: Upload EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: program-exe
+          path: program.exe
