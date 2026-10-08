@@ -1,0 +1,25 @@
+using namespace std;
+#include <iostream>
+string nama;
+string kelas;
+void siapa(){
+    cout<<"Masukkan Nama: ";
+    cin>>nama;
+}
+
+void sekola(){
+    cout<<"Kelas: ";
+    cin>>kelas;
+}
+
+void keluaran(){
+    cout<<"Masukkan Nama";
+    cin>>nama;
+}
+
+int main() {
+ siapa();
+    sekola();
+    keluaran();
+    return 0;
+}
