@@ -1,7 +1,10 @@
+
 name: Build EXE
 
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -9,12 +12,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Compile C++
-        run: |
-          g++ nama.cpp -o program.exe
+        run: g++ ace1.cpp -o program.exe -static -static-libgcc -static-libstdc++
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
