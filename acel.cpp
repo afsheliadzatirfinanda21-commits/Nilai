@@ -20,5 +20,6 @@ int nilai;
     else {
         cout<<"Nilaimu: D";
     }
+    system("pause");
     return 0;
 }
